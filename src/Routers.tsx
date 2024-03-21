@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Layout, { LayoutNone } from './components/layout/Layout'
-import Home from './views/Home'
+import Home from './views/Home/Home'
 import About from './views/About'
 import Signup from './views/Signup'
+import NotFound from './views/NotFound'
 
 const Routers: React.FC = () => (
     <BrowserRouter>
@@ -16,7 +17,7 @@ const Routers: React.FC = () => (
                 <Route path="signin" element={<Signup />} />
             </Route>
 
-            <Route path="*" element={<div>Not Found</div>} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     </BrowserRouter>
 )

@@ -1,14 +1,18 @@
 import React from 'react'
-import Header from './Header'
 import Footer from './Footer'
 import { Outlet } from 'react-router-dom'
+import Header from './Header'
+import NewsLetter from './NewsLetter'
+// import Banner from '../banner/Banner'
 
 const Layout: React.FC = () => (
     <div>
-        <Header name="가을이 홈페이지" />
+        {/* <Banner /> */}
+        <Header />
         <main id="main">
             <Outlet />
         </main>
+        <NewsLetter />
         <Footer />
     </div>
 )
